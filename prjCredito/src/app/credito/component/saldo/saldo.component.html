@@ -1,7 +1,52 @@
 <div class="row">
     <div class="col-12">
         <div class="jumbotron">
-            <h1> Credito</h1>
+            <h1  class="display-4"> Creditos</h1>
+            <div class="row">
+              <div class="col-12">
+                <div class="form-group">
+                  <label for="">Saldo</label>
+                  <input type="text" class="form-control" readonly [value]="pegaValor"> <br>
+                  <div class="col-3">
+                      <button class="btn btn-primary btn-block" (click)="calcula(-1)">Descontar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
     </div>
 </div>
+<div class="row">
+    <div class="col-12">
+        <div class="jumbotron">
+            <h1 class="display-4">Operações</h1>
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <label for="">Deposito</label> <br>
+                        <label for="">Definida:</label>
+                    </div>
+                </div>
+                <div class="col-1">
+                  <button class="btn btn-primary btn-block" (click)="calcula(1)">1</button>
+                </div>
+                <div class="col-1">
+                  <button class="btn btn-primary btn-block" (click)="calcula(10)">10</button>
+                </div>
+                <div class="col-1">
+                  <button class="btn btn-primary btn-block" (click)="calcula(100)">100</button>
+                </div>
+                <div class="col-1">
+                  <button class="btn btn-primary btn-block" (click)="calcula(-1)">-1</button>
+                </div>
+                <div class="col-1">
+                  <button class="btn btn-primary btn-block" (click)="calcula(-10)">-10</button>
+                </div>
+                <div class="col-1">
+                  <button class="btn btn-primary btn-block" (click)="calcula(-100)">-100</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
